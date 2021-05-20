@@ -14,6 +14,26 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button">
+                <img src="img/logo-green-1x.png" alt="" class="navigation__icon">
+            </label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                    <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -95,7 +115,7 @@
                 </div>
             </div>
         </div>
-        <div class="tours">
+        <div class="tours" id="section-tours">
             <h2 class= "about__header">
                 Most Popular Tours
             </h2>
@@ -125,7 +145,7 @@
                     </div>
                     <div class="tours__card-side tours__card-side-back tours__card-side-back-1">
                         <h1 class="tours__card-side-back-header">$278</h1>
-                        <a href="#" class="btn btn--white btn--animated">Book Now</a>
+                        <a href="#popup" class="btn btn--white">Book Now</a>
                     </div>
                 </div>
                 <div class="tours__card">
@@ -153,7 +173,7 @@
                     </div>
                     <div class="tours__card-side tours__card-side-back tours__card-side-back-2">
                         <h1 class="tours__card-side-back-header">$642</h1>
-                        <a href="#" class="btn btn--white btn--animated">Book Now</a>
+                        <a href="#popup" class="btn btn--white">Book Now</a>
                     </div>
                 </div>
                 <div class="tours__card">
@@ -182,7 +202,7 @@
 
                     <div class="tours__card-side tours__card-side-back tours__card-side-back-3">
                         <h1 class="tours__card-side-back-header">$867</h1>
-                        <a href="#" class="btn btn--white btn--animated">Book Now</a>
+                        <a href="#popup" class="btn btn--white">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -239,6 +259,98 @@
                 </div>
             </div>
         </div>
+        <div class="booking">
+            <div class="booking__container">
+                <div class="booking__form">
+                    <h2 class= "booking__header">
+                        Start Booking now!
+                    </h2>
+                    <form action="#" class="form">
+                        <div class="form__text-group">
+                            <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                            <label for="name" class="form__label">Full Name</label>
+                            <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                            <label for="email" class="form__label">Email Address</label>
+                        </div>
+                        <div class="form__radio-group">
+                            <div class="form__radio-group-unit">
+                                <input type="radio" class="form__radio-input" id="small" name="size">
+                                <label for="small" class="form__radio-label">
+                                    <span class="form__radio-button"></span>
+                                    Small Tour Group
+                                </label>
+                            </div>
+                            <div class="form__radio-group-unit">
+                                <input type="radio" class="form__radio-input" id="large"  name="size">
+                                <label for="large" class="form__radio-label">
+                                    <span class="form__radio-button"></span>
+                                    Large Tour Group
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__button-group">
+                            <button class="form__btn">Next step &rarr;</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__logo-box">
+                    <img src="img/logo-green-1x.png" alt="" class="footer__logo">
+                </div>
+                <div class="footer__text-box">
+                    <div class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a>Company</a></li>
+                            <li class="footer__nav-item"><a>Contact Us</a></li>
+                            <li class="footer__nav-item"><a>Careers</a></li>
+                            <li class="footer__nav-item"><a>Privacy Policy</a></li>
+                            <li class="footer__nav-item"><a>Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__copyright-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam.
+                    </div>
+                </div>
+            </div>
+        </footer>
         
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__images">
+                    <img src="img/nat-9.jpg" alt="" class="popup__image">
+                    <img src="img/nat-8.jpg" alt="" class="popup__image">
+                </div>
+                <div class="popup__text-box">
+                    <a href="#section-tours" class="popup__close">X</a>
+                    <h2 class= "popup__header">
+                        Start Booking now
+                    </h2>
+                    <h2 class= "features__header">
+                        Important - please read the terms and conditions first
+                    </h2>
+                    <div class="popup__text-box-2">
+                        <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam.
+                        </p>
+                        <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                    <a href="#" class="popup__btn">Book Now</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
